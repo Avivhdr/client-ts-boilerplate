@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["tsconfig.json"]
+  },
+  "plugins": [
+    // "@typescript-eslint"
+  ],
+  "extends": [
+    "react-app",
+    "airbnb-typescript",
+    "plugin:prettier/recommended"
+    // "prettier"
+    // "plugin:prettier/recommended"
+    // "eslint:recommended",
+    // "plugin:@typescript-eslint/recommended",
+    // "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "rules": {
+    // "prettier/prettier": "error",
+    // "arrow-body-style": "off",
+    // "prefer-arrow-callback": "off"
+  }
+}
