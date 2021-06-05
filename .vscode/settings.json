@@ -1,7 +1,16 @@
 {
-  "editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 
-	// "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // "editor.formatOnSave": true,
-  // "eslint.format.enable": true
+	// style
+	"css.validate": true,
+	// "less.validate": false,
+	// "scss.validate": false,
+
+	// "[css]": {
+	// 	"editor.codeActionsOnSave": {"source.fixAll.stylelint": true},
+	// },
+
+	"[javascript]": {
+		"editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+	},
 }
