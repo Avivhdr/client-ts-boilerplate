@@ -19,8 +19,12 @@ When saving a file:
 ### `yarn start`
 ### `yarn test`
 ### `yarn build`
+### `yarn eslint`
+Fixes all fixable ESlint errors and prettier errors in all `js` files
 ### `yarn stylelint`
-Fixes all stylelint errors and prettier errors in all `css` files
+Fixes all fixable Stylelint errors and prettier errors in all `css` files
+### `yarn fix-all`
+runs the eslint script, followed by the stylelint script
 ### `yarn prettier-eslint`
 format all files based on `.prettierrc` configuration and then pass the result to `eslint --fix`
 

@@ -2,15 +2,18 @@
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 
 	// style
-	"css.validate": true,
-	// "less.validate": false,
-	// "scss.validate": false,
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
 
-	// "[css]": {
-	// 	"editor.codeActionsOnSave": {"source.fixAll.stylelint": true},
-	// },
+	"[css]": {
+		"editor.codeActionsOnSave": {"source.fixAll.stylelint": true},
+	},
 
-	"[javascript]": {
+	"[typescript]": {
+		"editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+	},
+	"[typescriptreact, typescript]": {
 		"editor.codeActionsOnSave": {"source.fixAll.eslint": true},
 	},
 }
