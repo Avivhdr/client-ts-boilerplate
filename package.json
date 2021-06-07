@@ -67,7 +67,8 @@
     "eslint": "eslint --fix .",
     "stylelint": "stylelint --fix \"**/*.css\"",
     "fix-all": "(npm run eslint) && (npm run stylelint)",
-    "prettier-eslint": "prettier-eslint --write \"src/**/*.tsx\""
+    "prettier-eslint": "prettier-eslint --write \"src/**/*.tsx\"",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -139,9 +140,9 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.11.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.3.0",
@@ -155,6 +156,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.9.2",
     "eslint-webpack-plugin": "^2.5.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "2.3.0",
     "prettier-eslint": "^12.0.0",
     "prettier-eslint-cli": "^5.0.1",
@@ -162,5 +165,9 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^5.0.0",
     "stylelint-prettier": "^1.2.0"
+  },
+  "lint-staged": {
+    "*.ts*": "eslint --fix",
+    "*.css": "stylelint --fix"
   }
 }
