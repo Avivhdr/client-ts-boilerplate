@@ -167,7 +167,7 @@
     "stylelint-prettier": "^1.2.0"
   },
   "lint-staged": {
-    "*.ts*": "eslint --fix",
-    "*.css": "stylelint --fix"
+    "*.ts*": "eslint",
+    "*.css": "stylelint"
   }
 }
