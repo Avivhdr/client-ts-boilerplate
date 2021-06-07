@@ -164,6 +164,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^5.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
     "stylelint-prettier": "^1.2.0"
   },
   "lint-staged": {

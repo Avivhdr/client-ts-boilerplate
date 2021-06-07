@@ -3,7 +3,11 @@
 		"stylelint-config-recommended",
 		"stylelint-prettier/recommended"
 	],
+	"plugins": [
+    "stylelint-csstree-validator"
+  ],
 	"rules": {
-		"selector-type-no-unknown": null
-	}
+		"csstree/validator": true,
+		"property-no-unknown": null,
+		"selector-type-no-unknown": null	}
 }
