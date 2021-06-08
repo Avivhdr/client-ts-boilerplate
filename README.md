@@ -19,12 +19,14 @@ When saving a file:
 ### `yarn start`
 ### `yarn test`
 ### `yarn build`
+### `yarn analyze`
+Analyzing source code size using `source-map-exploer` and show results in the browser (must have a build version in the `build` folder - `npm run build`)
 ### `yarn eslint`
 Fixes all fixable ESlint errors and prettier errors in all `js` files
 ### `yarn stylelint`
 Fixes all fixable Stylelint errors and prettier errors in all `css` files
 ### `yarn fix-all`
 runs the eslint script, followed by the stylelint script
-### `yarn prettier-eslint`
+### `yarn prettier-eslint` (do  not use)
 format all files based on `.prettierrc` configuration and then pass the result to `eslint --fix`
 
