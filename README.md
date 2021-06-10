@@ -30,3 +30,23 @@ runs the eslint script, followed by the stylelint script
 ### `yarn prettier-eslint` (do  not use)
 format all files based on `.prettierrc` configuration and then pass the result to `eslint --fix`
 
+
+To reference assets in the public folder, you need to use an environment variable called PUBLIC_URL.
+From the public folder:
+```html
+<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+```
+From `src`:
+```js
+render() {
+  // Note: this is an escape hatch and should be used sparingly!
+  // Normally we recommend using `import` for getting asset URLs
+  return <img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
+}
+```
+
+
+### `Absolute Imports`
+When importing a file you can use:
+1. relative imports: `../../file.tsx`
+3. absolute imports that starts with `~` for differentiating global imports like `lodash/fp` and `@material-ui/core` and local absolute imports: `~/components/Bar`

@@ -3,22 +3,38 @@
   "parserOptions": {
     "project": ["tsconfig.json"]
   },
-  "plugins": [
-    // "@typescript-eslint"
-  ],
+  "plugins": [],
   "extends": [
-    "react-app",
-    "airbnb-typescript",
-    "plugin:prettier/recommended"
-    // "prettier"
-    // "plugin:prettier/recommended"
-    // "eslint:recommended",
+		"react-app",
+		"airbnb-typescript",
+		"plugin:prettier/recommended"
+		// "eslint:recommended",
     // "plugin:@typescript-eslint/recommended",
     // "plugin:@typescript-eslint/recommended-requiring-type-checking"
-  ],
+	],
   "rules": {
-    // "prettier/prettier": "error",
-    // "arrow-body-style": "off",
-    // "prefer-arrow-callback": "off"
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "~/**",
+            "group": "external",
+            "position": "after"
+          }
+        ],
+        "groups": [
+					"builtin",
+          "external",
+          "internal",
+          "unknown",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ]
+      }
+    ]
   }
 }
