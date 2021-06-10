@@ -1,11 +1,21 @@
+/* eslint-disable import/extensions */
+// Modules
+// Internals
+// Components
+// Styles
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+// import Checkbox from '@material-ui/core/Checkbox';
 import reportWebVitals from './reportWebVitals';
+import App from './App/App';
+// import styles from './index.module.css';
+// import x from '~/app/fileInApp';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* <Checkbox name="antoine" /> */}
+    {/* <div className={styles.Block}>{x}</div> */}
     <App />
   </React.StrictMode>,
   document.getElementById('root'),
