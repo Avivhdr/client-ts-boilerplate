@@ -36,6 +36,8 @@ Jest will look for test files with any of the following popular naming conventio
 - Files with `.test.js` suffix.
 - Files with `.spec.js` suffix.
 
+You can also press a in the watch mode to force Jest to run all tests.
+
 ### `build`
 
 ### `analyze`
