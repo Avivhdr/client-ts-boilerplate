@@ -22,29 +22,39 @@ When saving a file:
 
 ## Available Scripts
 
-### `yarn start`
+### `start`
 
-### `yarn test`
+### `test`
 
-### `yarn build`
+When you run the `test` script, Jest will launch in watch mode*. Every time you save a file, it will re-run the tests, like how npm start recompiles the code.
 
-### `yarn analyze`
+By default, when you run npm test, Jest will only run the tests related to files changed since the last commit.
+
+Jest will look for test files with any of the following popular naming conventions:
+
+- Files with `.js` suffix in `__tests__` folders.
+- Files with `.test.js` suffix.
+- Files with `.spec.js` suffix.
+
+### `build`
+
+### `analyze`
 
 Analyzing source code size using `source-map-exploer` and show results in the browser (must have a build version in the `build` folder - `npm run build`)
 
-### `yarn eslint`
+### `eslint`
 
 Fixes all fixable ESlint errors and prettier errors in all `js` files
 
-### `yarn stylelint`
+### `stylelint`
 
 Fixes all fixable Stylelint errors and prettier errors in all `css` files
 
-### `yarn fix-all`
+### `fix-all`
 
 Runs the eslint script, followed by the stylelint script
 
-### `yarn prettier-eslint` (do  not use)
+### `prettier-eslint` (do  not use)
 
 format all files based on `.prettierrc` configuration and then pass the result to `eslint --fix`
 
@@ -94,7 +104,7 @@ The ESlint rule `import/order` will make sure the import will be in this order.
 Files on the left have more priority than files on the right:
 
 - `npm start`: `.env.development.local`, `.env.local`, `.env.development`, `.env`
-- `npm run build`: `.env.production.local`, `.env.local`, `.env.production`, `.env`
+- `npm : `.env.production.local`, `.env.local`, `.env.production`, `.env`
 - `npm test`: `.env.test.local`, `.env.test`, `.env` (note `.env.local` is missing)
 
 `.env` files are read from `config/paths.js` and you can move them to a  different folder by changing their loading paths:
@@ -102,3 +112,7 @@ Files on the left have more priority than files on the right:
 ```javascript
 line 55: dotenv: resolveApp('.env'),
 ```
+
+## google analytics
+
+If this is a public app, you can use the `reportWebVitals()` function to pass live information to google analytics ([details](https://create-react-app.dev/docs/measuring-performance))

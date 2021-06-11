@@ -4,6 +4,10 @@ import {ReactComponent as Logo} from './logo.svg'; // parent
 import './App.css'; // sibling
 // import styles from './App.module.css';
 
+if (process.env.NODE_ENV !== 'production') {
+  console.info('Development mode!'); // eslint-disable-line no-console
+}
+
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [state, setState] = React.useState('initialState');
@@ -30,3 +34,11 @@ function App() {
 }
 
 export default App;
+
+/*
+	"@app/*": ["app/*"],
+	"@config/*": ["app/_config/*"],
+	"@environment/*": ["environments/*"],
+	"@shared/*": ["app/_shared/*"],
+	"@helpers/*": ["helpers/*"]
+*/
