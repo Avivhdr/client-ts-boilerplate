@@ -5,7 +5,8 @@ This boiler plate is based on `create-react-app --template typscript` and was ej
 ## Styling
 
 ---
-
+<details>
+  <summary>click to expand!</summary>
 Editor Config
 
 Prettier
@@ -13,24 +14,34 @@ Prettier
 *Stylelint*: stylelint-config-recommended, prettier (prettier errors are shown as stylelint errors)
 
 ESLint: airbnb-typescript, prettier (prettier errors are shown as eslint errors)
+</details></br></br>
 
 ## .vscode
 
 ---
+<details>
+  <summary>click to expand!</summary>
 Overrides local settings.json with these rules:
 When saving a file:
 
 1. TS file - running eslint --fix
 2. css file - running stylelint --fix
 
+</details></br></br>
+
 ## Available Scripts
 
 ---
+
+<details>
+  <summary>click to expand!</summary>
+
 ### `start`
 
 ### `test`
-
-When you run the `test` script, Jest will launch in watch mode*. Every time you save a file, it will re-run the tests, like how npm start recompiles the code.
+<details>
+  <summary>click to expand!</summary>
+  When you run the `test` script, Jest will launch in watch mode*. Every time you save a file, it will re-run the tests, like how npm start recompiles the code.
 
 By default, when you run npm test, Jest will only run the tests related to files changed since the last commit.
 
@@ -41,6 +52,7 @@ Jest will look for test files with any of the following popular naming conventio
 - Files with `.spec.js` suffix.
 
 You can also press a in the watch mode to force Jest to run all tests.
+</details></br></br>
 
 ### `build`
 
@@ -68,9 +80,16 @@ Runs the eslint script, followed by the stylelint script
 
 format all files based on `.prettierrc` configuration and then pass the result to `eslint --fix`
 
+</details></br></br>
+
 ## public folder
 
 ---
+
+<details>
+  <summary>click to expand!</summary>
+
+
 To reference assets in the public folder, you need to use an environment variable called PUBLIC_URL.
 From the public folder:
 
@@ -88,9 +107,13 @@ render() {
 }
 ```
 
+  </details></br></br>
+
 ## Absolute Imports
 
 ---
+<details>
+  <summary>click to expand!</summary>
 
 When importing a file you can use:
 
@@ -106,11 +129,13 @@ import logo from './logo.svg'; // relative import
 ```
 
 The ESlint rule `import/order` will make sure the import will be in this order.
+</details></br></br>
 
 ## Optional `.env` files
 
 ---
-
+<details>
+  <summary>click to expand!</summary>
 - `.env`: Default.
 - `.env.local`: Local overrides. **This file is loaded for all environments except test.**
 - `.env.development`, `.env.test`, `.env.production`: Environment-specific settings.
@@ -128,13 +153,25 @@ Files on the left have more priority than files on the right:
 line 55: dotenv: resolveApp('.env'),
 ```
 
+</details></br></br>
+
 ## Google analytics
 
 ---
+
+<details>
+  <summary>click to expand!</summary>
 If this is a public app, you can use the `reportWebVitals()` function to pass live information to google analytics ([details](https://create-react-app.dev/docs/measuring-performance))
 
+</details></br></br>
+
 ## Proxying
+
 ----
+
+<details>
+  <summary>click to expand!</summary>
+
 When working on both client and server, you can set the a `proxy` property inside `package.json` like this:
 ```JSON
  "proxy": "http://localhost:4000", // should match server port
@@ -144,6 +181,8 @@ And perform API calls to the server like this:
 fetch('/api/users');
 ```
 **This will work in development only!**
+
+</details></br></br>
 
 <br/><br/><br/><br/>
 
