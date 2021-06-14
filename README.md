@@ -2,6 +2,13 @@
 
 This boiler plate is based on `create-react-app --template typscript` and was ejected.
 
+## *TODO:*
+
+1. Add react-error-boundary
+2. Add [routing](https://reactrouter.com/web/example/animated-transitions)
+3. Debugging jest files in eject-mode [docs](https://create-react-app.dev/docs/debugging-tests)
+4. Add sign-up & login page
+5. Add dark-mode ([use-dark-mode](https://github.com/donavon/use-dark-mode) & [ui](https://www.npmjs.com/package/react-dark-mode-toggle))
 ## Styling
 
 ---
