@@ -4,11 +4,12 @@ This boiler plate is based on `create-react-app --template typscript` and was ej
 
 ## *TODO:*
 
-1. Add react-error-boundary
-2. Add [routing](https://reactrouter.com/web/example/animated-transitions)
-3. Debugging jest files in eject-mode [docs](https://create-react-app.dev/docs/debugging-tests)
-4. Add sign-up & login page
-5. Add dark-mode ([use-dark-mode](https://github.com/donavon/use-dark-mode) & [ui](https://www.npmjs.com/package/react-dark-mode-toggle))
+* [Normalize](https://create-react-app.dev/docs/adding-css-reset/) CSS
+* Add react-error-boundary
+* Add [routing](https://reactrouter.com/web/example/animated-transitions)
+* Debugging jest files in eject-mode [docs](https://create-react-app.dev/docs/debugging-tests)
+* Add sign-up & login page
+* Add dark-mode ([use-dark-mode](https://github.com/donavon/use-dark-mode) & [ui](https://www.npmjs.com/package/react-dark-mode-toggle))
 ## Styling
 
 ---
@@ -28,11 +29,18 @@ ESLint: airbnb-typescript, prettier (prettier errors are shown as eslint errors)
 ---
 <details>
   <summary>click to expand!</summary>
+
+### <u>settings.json</u>
+
 Overrides local settings.json with these rules:
 When saving a file:
 
 1. TS file - running eslint --fix
 2. css file - running stylelint --fix
+
+### <u>extensions.json</u>
+
+A list of recommanded extention for this project.
 
 </details></br></br>
 
