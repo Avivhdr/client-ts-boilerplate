@@ -4,7 +4,6 @@ This boiler plate is based on `create-react-app --template typscript` and was ej
 
 ## *TODO:*
 
-* [Normalize](https://create-react-app.dev/docs/adding-css-reset/) CSS
 * Add react-error-boundary
 * Add [routing](https://reactrouter.com/web/example/animated-transitions)
 * Debugging jest files in eject-mode [docs](https://create-react-app.dev/docs/debugging-tests)
@@ -12,44 +11,43 @@ This boiler plate is based on `create-react-app --template typscript` and was ej
 * Add dark-mode ([use-dark-mode](https://github.com/donavon/use-dark-mode) & [ui](https://www.npmjs.com/package/react-dark-mode-toggle))
 ## Styling
 
+* Normalize.css is included in `index.css`
+## Linting included in the project:
 ---
-<details>
-  <summary>click to expand!</summary>
-Editor Config
+<!-- <details>
+  <summary>click to expand!</summary> -->
+* Editor Config
 
-Prettier
+* Prettier
 
-*Stylelint*: stylelint-config-recommended, prettier (prettier errors are shown as stylelint errors)
+* *Stylelint*: stylelint-config-recommended, prettier (prettier errors are shown as stylelint errors)
 
-ESLint: airbnb-typescript, prettier (prettier errors are shown as eslint errors)
-</details></br></br>
+* ESLint: airbnb-typescript, prettier (prettier errors are shown as eslint errors)
+<!-- </details></br></br> -->
 
 ## .vscode
 
 ---
-<details>
-  <summary>click to expand!</summary>
+<!-- <details>
+  <summary>click to expand!</summary> -->
 
-### <u>settings.json</u>
+* ### <u>settings.json</u> -  overrides local settings.json with these rules:
 
-Overrides local settings.json with these rules:
-When saving a file:
+  When saving a file:
 
-1. TS file - running eslint --fix
-2. css file - running stylelint --fix
+  1. TS file - running eslint --fix
+  2. css file - running stylelint --fix
 
-### <u>extensions.json</u>
+* ### <u>extensions.json</u> - list of recommanded extention for this project.
 
-A list of recommanded extention for this project.
-
-</details></br></br>
+<!-- </details></br></br> -->
 
 ## Available Scripts
 
 ---
-
+<!--
 <details>
-  <summary>click to expand!</summary>
+  <summary>click to expand!</summary> -->
 
 ### `start`
 
@@ -67,7 +65,7 @@ Jest will look for test files with any of the following popular naming conventio
 - Files with `.spec.js` suffix.
 
 You can also press a in the watch mode to force Jest to run all tests.
-</details></br></br>
+</details>
 
 ### `build`
 
@@ -95,14 +93,14 @@ Runs the eslint script, followed by the stylelint script
 
 format all files based on `.prettierrc` configuration and then pass the result to `eslint --fix`
 
-</details></br></br>
+<!-- </details></br></br> -->
 
 ## public folder
 
 ---
 
-<details>
-  <summary>click to expand!</summary>
+<!-- <details> -->
+  <!-- <summary>click to expand!</summary> -->
 
 
 To reference assets in the public folder, you need to use an environment variable called PUBLIC_URL.
@@ -122,13 +120,13 @@ render() {
 }
 ```
 
-  </details></br></br>
+  <!-- </details></br></br> -->
 
 ## Absolute Imports
 
 ---
-<details>
-  <summary>click to expand!</summary>
+<!-- <details> -->
+  <!-- <summary>click to expand!</summary> -->
 
 When importing a file you can use:
 
@@ -144,7 +142,7 @@ import logo from './logo.svg'; // relative import
 ```
 
 The ESlint rule `import/order` will make sure the import will be in this order.
-</details></br></br>
+<!-- </details></br></br> -->
 
 ## Optional `.env` files
 
