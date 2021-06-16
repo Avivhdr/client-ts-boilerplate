@@ -12,6 +12,7 @@ This boiler plate is based on `create-react-app --template typscript` and was ej
 ## Styling
 
 * Normalize.css is included in `index.css`
+* Import a css file with this pattern: `[name].module.css` and the styled will be encpsulated to the component using `css-modules`.
 ## Linting included in the project:
 ---
 <!-- <details>
