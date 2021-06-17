@@ -1,0 +1,63 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "label": "npm: start",
+      "detail": "node scripts/start.js"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "node scripts/build.js"
+    },
+    {
+      "type": "npm",
+      "script": "serve",
+      "problemMatcher": [],
+      "label": "npm: serve",
+      "detail": "serve -s build"
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "group": "test",
+      "problemMatcher": [],
+      "label": "npm: test",
+      "detail": "node scripts/test.js"
+    },
+    {
+      "type": "npm",
+      "script": "analyze",
+      "problemMatcher": [],
+      "label": "npm: analyze",
+      "detail": "source-map-explorer 'build/static/js/*.js'"
+    },
+    {
+      "type": "npm",
+      "script": "eslint",
+      "problemMatcher": [],
+      "label": "npm: eslint",
+      "detail": "eslint --fix ."
+    },
+    {
+      "type": "npm",
+      "script": "stylelint",
+      "problemMatcher": [],
+      "label": "npm: stylelint",
+      "detail": "stylelint --fix \"**/*.css\""
+    },
+    {
+      "type": "npm",
+      "script": "fix-all",
+      "problemMatcher": [],
+      "label": "npm: fix-all",
+      "detail": "(npm run eslint) && (npm run stylelint)"
+    }
+  ]
+}
