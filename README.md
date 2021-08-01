@@ -4,6 +4,7 @@ This boiler plate is based on `create-react-app --template typscript` and was ej
 
 ## *TODO:*
 
+* path intelisense for `~/..`
 * Add react-error-boundary
 * Add [routing](https://reactrouter.com/web/example/animated-transitions)
 * Debugging jest files in eject-mode [docs](https://create-react-app.dev/docs/debugging-tests)
