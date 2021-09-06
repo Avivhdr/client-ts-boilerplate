@@ -10,6 +10,7 @@ This boiler plate is based on `create-react-app --template typscript` and was ej
 * Debugging jest files in eject-mode [docs](https://create-react-app.dev/docs/debugging-tests)
 * Add sign-up & login page
 * Add dark-mode ([use-dark-mode](https://github.com/donavon/use-dark-mode) & [ui](https://www.npmjs.com/package/react-dark-mode-toggle))
+* https://github.com/sindresorhus/eslint-plugin-unicorn/blob/d53d935951aa815c763fc9441aa452c763294715/docs/rules/error-message.md
 ## Styling
 
 * Normalize.css is included in `index.css`
