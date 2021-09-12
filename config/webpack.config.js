@@ -728,16 +728,8 @@ module.exports = function (webpackEnv) {
             '.cache/.eslintcache'
           ),
           // ESLint class options
-          cwd: paths.appPath,
-          resolvePluginsRelativeTo: __dirname,
-          baseConfig: {
-            extends: [require.resolve('eslint-config-react-app/base')],
-            rules: {
-              ...(!hasJsxRuntime && {
-                'react/react-in-jsx-scope': 'error',
-              }),
-            },
-          },
+          // cwd: paths.appPath,
+          // resolvePluginsRelativeTo: __dirname,
         }),
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
