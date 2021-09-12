@@ -26,6 +26,7 @@
     * [extensions.json](./.vscode/extensions.json) -> A list of extensions that would be recommended to install when first cloning the project.
     * [launch.json](./.vscode/launch.json) -> usefull for debugging inside VSCode
 11. Adding a[`.env`](./.env) file with all the available built-in options commented out.
+12. Adding [Error catcher](https://reactjs.org/docs/error-boundaries.html) by Wrapping `<App />` with an [ErrorBoundary](https://github.com/bvaughn/react-error-boundary) component.
 
 
 <br />
