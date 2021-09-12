@@ -6,14 +6,13 @@
 	"less.validate": false,
 	"scss.validate": false,
 
-	"[css]": {
-		"editor.codeActionsOnSave": {"source.fixAll.stylelint": true},
-	},
-
-	"[typescript]": {
-		"editor.codeActionsOnSave": {"source.fixAll.eslint": true},
-	},
-	"[typescriptreact]": {
-		"editor.codeActionsOnSave": {"source.fixAll.eslint": true},
-	},
+	// "[css]": {
+	// 	"editor.codeActionsOnSave": {"source.fixAll.stylelint": true},
+	// },
+	// "[typescript]": {
+	// 	"editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+	// },
+	// "[typescriptreact]": {
+	// 	"editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+	// },
 }
