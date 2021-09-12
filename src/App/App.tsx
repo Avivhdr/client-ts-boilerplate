@@ -1,44 +1,47 @@
+// --> Modules
 import React from 'react'; // external
+import {ErrorBoundary} from 'react-error-boundary';
+
+// --> Components
+import {ErrorFallback} from '~components/common/ErrorFallback';
+
+// --> Styles
 // import logo from './logo.svg';
 import {ReactComponent as Logo} from './logo.svg'; // parent
 import './App.css'; // sibling
 // import styles from './App.module.css';
 
 if (process.env.NODE_ENV !== 'production') {
-  console.info('Development mode!'); // eslint-disable-line no-console
+  console.info('Development mode!');
 }
 
 function App() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [state, setState] = React.useState('initialState');
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logo className="App-logo" />
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React with style
-        </a>
-      </header>
-      {/* <div className={styles.Block}>GREEN OD RED</div> */}
-    </div>
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      // onError={() => {/* handleOnError */}}
+      // onReset={() => {/* handleOnReset */}}
+    >
+      <div className="App">
+        <header className="App-header">
+          <Logo className="App-logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <p>
+            Edit <code>src/App.tsx</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React with style
+          </a>
+        </header>
+        {/* <div className={styles.Block}>GREEN OD RED</div> */}
+      </div>
+    </ErrorBoundary>
   );
 }
 
 export default App;
-
-/*
-	"@app/*": ["app/*"],
-	"@config/*": ["app/_config/*"],
-	"@environment/*": ["environments/*"],
-	"@shared/*": ["app/_shared/*"],
-	"@helpers/*": ["helpers/*"]
-*/

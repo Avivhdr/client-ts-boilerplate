@@ -1,9 +1,6 @@
-/* eslint-disable import/extensions */
-
 // Modules
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import {ErrorBoundary} from 'react-error-boundary';
 
 // Internals
 import reportWebVitals from './reportWebVitals';
@@ -13,7 +10,6 @@ import App from './App/App';
 
 // Styles
 import './index.css';
-// import x from '~/app/fileInApp';
 
 ReactDOM.render(
   <React.StrictMode>
